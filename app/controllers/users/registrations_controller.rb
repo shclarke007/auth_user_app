@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+# A custom controller for user registrations in a Ruby on Rails application that
+# responds to JSON requests and overrides the default behavior of the Devise gem.
+# Bearer token generated in response header
+
 class Users::RegistrationsController < Devise::RegistrationsController
   respond_to :json 
   

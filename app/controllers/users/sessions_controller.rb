@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+# A Ruby controller for user sessions that handles signing in and signing out, and
+# responds with JSON.
+
 class Users::SessionsController < Devise::SessionsController
   respond_to :json 
   
