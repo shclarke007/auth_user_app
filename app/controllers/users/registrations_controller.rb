@@ -10,7 +10,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   private
 
   def sign_up_params
-    params.permit(:username, :email, :password)
+    params.permit(:username, :email, :password, :admin)
   end
   
   def respond_with(resource, options={})
